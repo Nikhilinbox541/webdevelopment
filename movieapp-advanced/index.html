@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Movie Explorer</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>🎬 Movie Explorer</header>
+
+  <!-- <section class="search-section">
+    <input type="text" id="searchInput" placeholder="Search by movie title, actor, or keyword..." />
+    <button onclick="searchMovies()">Search</button>
+  </section>
+   -->
+  <!-- <section class="search-section">
+  <input type="text" id="searchInput" placeholder="Search...">
+  <select id="searchType">
+    <option value="movie">By Movie Title</option>
+    <option value="actor">By Actor Name</option>
+  </select>
+  <button onclick="searchMovies()">Search</button>
+</section> -->
+
+<section class="search-section">
+  <input type="text" id="searchInput" placeholder="Search...">
+  <select id="searchType">
+    <option value="movie">By Movie Title</option>
+    <option value="actor">By Actor Name</option>
+  </select>
+  <button onclick="searchMovies()">Search</button>
+</section>
+
+
+
+  <section class="filter-section">
+    <button onclick="getTrendingMovies()">Trending</button>
+    <button onclick="getTopRatedMovies()">Top Rated</button>
+    <button onclick="getNowPlayingMovies()">Now Playing</button>
+  </section>
+
+  <div class="movie-list" id="movieList"></div>
+  <h2 id="recommendationTitle" style="text-align: center; display: none;">Recommended Movies</h2>
+<div class="movie-list" id="recommendationList"></div>
+
+</body>
+</html>
+
